@@ -1,8 +1,4 @@
-UPDATE (3/15/2018) I'm still here, left my old job, started a new job and been hectic. Work will resume on Bowhead this weekend.
-
-UPDATE (2/8/2018): **COMMANDS ARE PROBABLY BROKE** updated project to Laravel 5.6 and made changes to coinigy data getter.
-
-UPDATE (1/30/2018): **COMMANDS ARE PROBABLY BROKE**, I am still cleaning up from the Bitfinex issues. To summarize, Bitfinex no longer allows accounts from the United States, earlier version of Bowhead was very tied to Bitfinex for data. The recent work is adding Coinigy and CCXT support so Bowhead will work for more than 90 exchanges. I have a full time job a one-year old son, so I have limited time and do as much as I can, so I apologize that it is still being fixed.
+** Forked 2018-04-02 **
 
 CURRENT BOWHEAD ROADMAP:
 1. (currently **20%**) Finish the web main page (initial, graphs, signals and indcators)
@@ -90,15 +86,16 @@ I highly suggest you read through it and follow along to get it up and running.
 
 #### basic setup
 You will need 
-* PHP7.1
-* Redis
+* Apache2 
+* PHP7.1 
+* Redis ( sudo add-apt-repository ppa:chris-lea/redis-server; sudo apt-get update && sudo apt-get install redis-server )
 * MySql 
-* the PHP Pecl Trader extension, 
+* the PHP Pecl Trader extension ( sudo pecl install trader ) 
 
 for Python
 you will need the dotenv package. 
 ````
-pip install python-env
+pip install python-env ( update pip via pip install --upgrade pip )
 ````
 
 #### Notes
